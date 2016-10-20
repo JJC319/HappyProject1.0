@@ -4,6 +4,7 @@
         <attr name="cornerRadius" format="dimension" />
     </declare-styleable>
 
+    <!---->
     <declare-styleable name="CircleImageView">
         <attr name="radius" format="dimension" />
         <attr name="iscircle" format="boolean" />
@@ -24,4 +25,22 @@
         </attr>
     </declare-styleable>
 
+    <!--控件的点击效果属性-->
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" /><!--波纹透明度-->
+        <attr name="rv_framerate" format="integer"/><!--波纹帧速率-->
+        <attr name="rv_rippleDuration" format="integer"/><!--波纹的持续时间-->
+        <attr name="rv_color" format="color" /><!--波纹的颜色-->
+        <attr name="rv_centered" format="boolean" /><!--是否从控件的中心坐标显示波纹-->
+        <attr name="rv_type" format="enum"><!--波纹的显示类型-->
+            <enum name="simpleRipple" value="0"/><!--一层-->
+            <enum name="doubleRipple" value="1"/><!--双层-->
+            <enum name="rectangle" value="2" /><!--矩形波纹-->
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" /><!--波纹间距, 当波纹类型为1时起作用-->
+        <!--以下三个为一组属性-->
+        <attr name="rv_zoomDuration" format="integer" /><!--控件缩放的持续时间-->
+        <attr name="rv_zoom" format="boolean" /><!--是否缩放控件-->
+        <attr name="rv_zoomScale" format="float" /><!--缩放的比例-->
+    </declare-styleable>
 </resources>
