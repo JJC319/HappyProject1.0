@@ -7,3 +7,9 @@ I*.iml
 /build
 /captures
 .externalNativeBuild
+
+*.iml
+
+customview/customview.iml
+
+customview/customview.iml
