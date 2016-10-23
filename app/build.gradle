@@ -41,7 +41,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //导入依赖项目jar
-    compile project(':commonutils')
     compile project(':customview')
     compile project(':database')
     compile project(':networkutils')
